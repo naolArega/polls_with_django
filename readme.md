@@ -1,3 +1,5 @@
 ### A simple django polling website
-#### just clone and try it
-#### it is in progress
+#### to use install django
+#### - [x] view polls
+#### - [x] vote on a poll
+#### - [ ] add polls
