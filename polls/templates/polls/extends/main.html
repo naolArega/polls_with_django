@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>django polling website </title>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'polls/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}">
 	</head>
 	<body>
 		{% include "polls/includes/navbar.html" %}
-		{% block content %}
-		{% endblock %}
+		<div class="container">
+			{% block content %}
+			{% endblock %}
+		</div>
 		{% include "polls/includes/footer.html" %}
+		<script type="text/css" src="{% static 'polls/js/jquery-3.5.1.slim.min.js' %}"></script>
+		<script type="text/css" src="{% static 'polls/js/popper.min.js' %}"></script>
+		<script type="text/css" src="{% static 'polls/js/bootstrap.min.js' %}"></script>
 	</body>
 </html>
